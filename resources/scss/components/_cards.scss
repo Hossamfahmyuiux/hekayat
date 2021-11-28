@@ -1,0 +1,1278 @@
+/* || ===
+
+= IMKAN.com.sa
+= CARDS
+
+=== || */
+
+// * Start Features * //
+#features
+{   
+    background-color: $c-gray;
+    padding-bottom: 120px;
+    .features-bg
+    {
+        
+        background: url(../imgs/features-bg.png) no-repeat;
+        background-size: 90%;
+        background-position: center;
+    }
+    h3
+    {
+        font-size: $lr-fontsize;
+        font-family: 'Gulf';
+    }
+    h2
+    {
+        color: $c-brand2;
+        font-family: 'Gulf';
+        margin-bottom: 180px;
+        @media screen and (max-width:$tablet)
+        {
+            margin-bottom: $md-whitespace;
+            margin-top: 0px;
+        }
+    }
+    .boxs
+    {
+        .box
+        {
+            cursor: pointer;
+            &:hover
+            {
+                top: -10px;
+                box-shadow: 0px 7px 60px 0px rgba(35, 39, 48, 0.08);
+            }
+            min-height: 234px;
+            &:nth-child(2)
+            {
+                top: -70px;
+                  &:hover
+                {
+                    top: -80px;
+                    box-shadow: 0px 7px 60px 0px rgba(35, 39, 48, 0.08);
+                }
+                @media screen and (max-width:$tablet)
+                {
+                    top: 0px;
+                    
+                }
+            }
+            border-radius: 100px;
+            margin: $sm-whitespace;
+            padding: 64px 0px 40px 0px;
+            width: 350px;
+            position: relative;
+            top: 0;
+            box-shadow: 0px 5px 20px 0px rgba(35, 39, 48, 0.07);
+            @include transition;
+            background-color: $c-white;
+            @media screen and (max-width:$tablet)
+            {
+                margin: $sm-whitespace - 10px;
+                margin-top: $lr-whitespace + 20px;
+            }
+            .image
+            {
+                position: absolute; 
+                top: -62px;
+                margin: 0 auto;
+                right: 0;
+                left: 0;
+                @media screen and (max-width:$tablet)
+                {
+                    position: absolute;
+                    top: -50px;
+                    margin-right: 0px;
+                }   
+
+                img
+                {
+                    width: auto;
+                    @media screen and (max-width:$tablet)
+                    {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+        header
+        {
+            h1
+            {
+                font-size:$lr-fontsize;
+                margin-bottom: $sm-whitespace;
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $xm-fontsize;
+                    margin-top: $sm-whitespace;
+                }
+            }
+            p
+            {
+                font-size: $md-sm-fontsize;
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: $xs-fontsize;
+                    margin-top: $sm-whitespace;
+                }
+            }
+            
+        }
+    }
+  
+  
+}
+// * End Features * //
+
+
+// * Start Users area * //
+
+.sections-bg
+{
+    max-width: 100%vw;
+}
+.users-area
+{
+    background-color: $c-gray;
+    position: relative;
+    h3
+    {
+        font-size: $lr-fontsize;
+        font-family: 'Gulf';
+    }
+    h2
+    {
+        color: $c-brand2;
+        font-family: 'Gulf';
+        margin-bottom: 80px;
+        @media screen and (max-width: $tablet)
+        {
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+    }
+    .arrows
+    {
+        @media screen and (max-width: $tablet)
+        {
+            margin-top: $sm-whitespace;    
+        }
+        a
+        {
+            display: inline;
+            margin-right: $md-whitespace;
+        }
+    }
+  
+    .slick-slider
+    {
+      height: 160px;
+    }
+    .slick-track
+    {
+        @media screen and (max-width: $tablet)
+        {
+            padding-top: 75px!important;
+        }
+    }
+    .slick-next:before
+    {
+      right: 1031px;
+      @media only screen and (max-width: 768px)
+      {
+        right: 144px;
+      }
+    }
+    .slick-prev:before
+    {
+      left: 46px;
+      @media only screen and (max-width: 768px)
+      {
+        left: 148px;
+      }
+    }
+    .slick-prev:before, .slick-next:before
+    {
+      color: $c-dgray;
+      position: absolute;
+      font-size: $lr-lr-fontsize + 4px;
+      bottom: 296px;
+      @media only screen and (max-width: 768px)
+      {
+        bottom: 238px;
+      }
+    }
+    .slick-slider
+    {
+      margin: 0;
+      height: 272px;
+    }
+    .slick-track
+    {
+      height: 272px;
+      padding-top: 112px
+    }
+    .slider
+    {
+        margin-bottom: -70px;
+        @media screen and (max-width:$tablet)
+        {
+            margin-bottom: -110px;
+        }
+        .slick-list
+        {
+            overflow: visible!important;
+            @media screen and (max-width:$tablet)
+            {
+                overflow: hidden!important;
+            }
+        }
+      .slide
+      {
+
+          margin: 0 10px;
+          height: 160px;
+          width: 255px;
+       
+          @media screen and (max-width: $tablet)
+          {
+            height: auto;
+          }
+
+          article
+          {
+            border-radius: 10px;
+            height: 160px;
+            width:100%;
+            background-color:  $c-white;
+            border-radius: 160px;
+            @media screen and (max-width: $tablet)
+            {
+              width: 100%;
+              height: auto;
+            }
+            .background
+            {
+              position: relative;
+              height: 160px;
+              width: 100%;
+              transition: all 0.5s;
+              img
+              {
+                display: block;
+                width: auto;
+                position: absolute;
+                top: -111px;
+                right: $sm-whitespace;
+                @media screen and (max-width: $tablet)
+                {
+                    display: block;
+                    width: auto;
+                    height: 100px;
+                    position: absolute;
+                    top: -55px;
+                    right: $md-whitespace - 8px;
+                }
+              } 
+              @media screen and (max-width: $tablet)
+              {
+              }
+
+              header
+              {
+                position: absolute;
+                margin: 30px 120px 30px 45px;
+                @media only screen and (max-width: 768px)
+                {
+                  text-align: center;
+                    margin: 30px 90px 30px 45px;
+                }
+                p
+                {
+                    font-size: 16px;
+                    margin-top: 10px;
+                    @media screen and (max-width: $tablet)
+                    {
+                        font-size: $sm-fontsize;
+                        text-align: right;
+                    }
+                }
+                h1
+                {
+                    font-size: $md-fontsize;
+                    @media screen and (max-width: $tablet)
+                    {
+                        font-size: $xm-fontsize;
+                        text-align: right;
+                    }
+                }
+              }
+            }
+          }
+
+      }
+    }
+}
+
+
+// * End Users area * //
+
+
+// * Start investoes * //
+
+#investors
+{
+    background-color: $c-brand2;
+    padding: 180px 0 0 0;
+    @media screen and (max-width:$tablet)
+    {
+        padding: 90px 0 0 0;
+    }
+    h3
+    {
+        font-size: $lr-fontsize;
+        font-family: 'Gulf';
+        color: $c-brandhvr;
+    }
+    h2
+    {
+        font-family: 'Gulf';
+        margin-bottom: $lr-whitespace;
+        @media screen and (max-width: $tablet)
+        {
+            margin-top: 0px;
+        }
+    }
+     .arrows-2
+    {
+        @media screen and (max-width: $tablet)
+        {
+            margin-top: $sm-whitespace;    
+        }
+        a
+        {
+            display: inline;
+            margin-right: $md-whitespace;
+        }
+    }
+    .investors-logos
+    {
+        margin-bottom: $lr-whitespace + 20px;
+        figure
+        {
+            padding-left: 15px;
+            padding-right: 15px;
+            a
+            {
+                
+                height: 80px;
+                width: 100%;
+                display: block;
+                border-radius: 100px;
+                overflow: hidden;
+                margin-bottom: 30px;
+                padding: 32px 0 0 0;
+                text-align: center;
+                position: relative;
+                top: 0;
+                background-color: $c-white;
+                @include transition;
+                &:hover
+                {
+                    box-shadow: 0px 7px 60px 0px rgba(35, 39, 48, 0.08);
+                }
+                @media screen and (max-width: $tablet)
+                {
+                    padding: 35px 0 0 0;
+                }
+                img
+                {
+                    width: auto;
+                    height: auto;
+                    margin: 0 auto;
+                    right: 0;
+                    left: 0;
+                    @media screen and (max-width: $tablet)
+                    {
+                        height: 13px;
+                    }
+                }
+              
+            }
+        }
+        .bg-logo
+        {
+            a
+            {
+                padding: 24px 0 0 0;
+                @media screen and (max-width: $tablet)
+                {
+                    padding: 28px 0 0 0;
+                }
+                img
+                {
+                    width: auto;
+                    height: 35px;
+                    margin: 0 auto;
+                    right: 0;
+                    left: 0;
+                    @media screen and (max-width: $tablet)
+                    {
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// * End investors * //
+
+
+// * Start gallery * //
+
+#gallery
+{
+    background: url("../imgs/gallary-bg.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-color: $c-gray;
+    padding: $xl-whitespace + 20px 0 $xl-whitespace + 20px 0;
+    @media screen and (max-width:$tablet)
+    {
+        padding: $lr-whitespace 0 $lr-whitespace 0;
+    }
+     h3
+    {
+        font-size: $lr-fontsize;
+        font-family: 'Gulf';
+    }
+    h2
+    {
+        font-family: 'Gulf';
+        margin-bottom: $lr-whitespace + 20px;
+        color: $c-brand2;
+        @media screen and (max-width: $tablet)
+        {
+            margin-top: 0px;
+        }
+    }
+    .line1
+    {
+        padding: 1px!important;
+        .image
+        {
+            margin-bottom: 1px;
+            background-color: $c-black;
+            img
+            {
+                
+                opacity: 0.5;
+                cursor: pointer;
+                &:hover
+                {
+                    opacity: 1;
+                }
+            }
+        }
+        .lg-image
+        {
+            height: 228px;
+            width: 290.5px;
+            margin-bottom: 1px;
+            background-color: $c-black;
+            @media screen and (max-width:$tablet)
+            {
+                width: 100%;
+                overflow: hidden;
+            }
+            img
+            {
+                
+                opacity: 0.5;
+                @include transition;
+                cursor: pointer;
+                &:hover
+                {
+                    opacity: 1;
+                }
+            }
+        }
+        .sm-image
+        {
+            height: 123.5px;
+            width: 290.5px;
+            margin-bottom: 1px;
+            background-color: $c-black;
+            @media screen and (max-width:$tablet)
+            {
+                width: 100%;
+                height: auto;
+            }
+            img
+            {
+                opacity: 0.5;
+                cursor: pointer;
+                &:hover
+                {
+                    opacity: 1;
+                }
+                @media screen and (max-width:$tablet)
+                {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .lg-image2
+        {
+            height: 215px;
+            width: 291px;
+            @media screen and (max-width:$tablet)
+            {
+                width: 100%;
+                height: auto;
+            }
+            img
+            {
+                height: 215px;
+                width: 291px;
+                @media screen and (max-width:$tablet)
+                {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .sm-image2
+        {
+            height: 136px;
+            width: 291px;
+            @media screen and (max-width:$tablet)
+            {
+                width: 100%;
+                height: auto;
+            }
+
+        }
+        .lg-image3
+        {
+            height: 201px;
+            width: 291.5px;
+            @media screen and (max-width:$tablet)
+            {
+                width: 100%;
+                height: auto;
+            }
+            img
+            {
+                height: 201px;
+                width: 291px;
+                @media screen and (max-width:$tablet)
+                {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        .sm-image3
+        {
+            height: 150px;
+            width: 290.5px;
+            @media screen and (max-width:$tablet)
+            {
+                width: 100%;
+                height: auto;
+            }
+            img
+            {
+                height: 150px;
+                @media screen and (max-width:$tablet)
+                {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+  
+        
+    }
+}
+
+// * End gallery * //
+
+// *start header-books*//
+
+.header-books
+{
+    background-color: $c-gray;
+    .header-boxs
+    {
+        margin-top: -120px;
+        .box
+        {
+            @media screen and (max-width:$tablet)
+            {
+                margin-bottom: 30px;
+            }
+            .bg
+            {
+                img
+                {
+                    height: 350px;
+                }
+                a
+                {
+                    display: block;
+                    width: 100%;
+                    min-height: 350px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    @include transition;
+                    &:hover
+                    {
+                        box-shadow: 0px 8px 29px 0 rgba(36, 43, 49, 0.10);
+                    }
+                }
+            }
+        }
+   
+    }
+}
+// *end header-books*//
+
+// *start best-sellers*//
+#best-sellers
+{
+    padding-top: 140px;
+    background: url(../imgs/gallary-bg.png) no-repeat;
+    background-color: $c-gray;
+   .text
+    {
+        padding-bottom: $md-whitespace - 5px;
+        h2
+        {
+            color: $c-brand2;
+            margin-top: $sm-whitespace - 5px;
+            font-family: 'Gulf';
+        }
+        a
+        {
+            color: $c-mgray;
+            cursor: pointer;
+
+            @include transition;
+            i
+            {
+                font-size: 16px;
+                margin-right: $sm-whitespace;
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: 12px;
+                }
+            }
+            &:hover
+            {
+                color: $c-brand2;
+            }
+            span
+            {
+                font-size: 23px;
+                font-family: 'Gulf';
+                line-height: 1.6;
+                @media screen and (max-width:$tablet)
+                {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .best-sellers-boxs
+    {
+        margin-top: $xl-whitespace;
+        margin-bottom: $xl-whitespace - 10px;
+        
+        .box
+        {
+            @media screen and (max-width:$tablet)
+            {
+                margin-bottom: 70px;
+                margin-top: 20px;
+            }
+            
+            .bg
+            {
+               img
+                {
+                    height: 350px;
+                }
+                a
+                {
+                    display: block;
+                    width: 100%;
+                    min-height: 350px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    @include transition;
+                    &:hover
+                    {
+                        box-shadow: 0px 8px 29px 0 rgba(36, 43, 49, 0.10);
+                    }
+                }
+              
+            }
+            position: relative;
+            article
+            {
+          
+            .price
+            {
+                width: 85px;
+                height: 85px;
+                background-color: #ec5e77;
+                text-align: center;
+                top: -42px;
+                border-radius: 100%;
+                position: absolute;
+                display: block;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                h3
+                {
+                    color: $c-white;
+                    font-size: 32px;
+                    font-family: $en-font;
+                    line-height: 0.5;
+                    margin-top: 28px;
+                    
+                }
+                span
+                {
+                    font-size: 16px;
+                    color: $c-white;
+                    font-family: 'Gulf';
+                }
+            }
+            .sale
+            {
+                height: 65px;
+                width: 65px;
+                position: absolute;
+                top: 25px;
+                margin-top: 30px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #2ed064;
+                display: block;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                p
+                {
+                    color: $c-white;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    font-family: $en-font;
+                }
+            }
+                header
+                {
+                    margin-top: $md-whitespace;
+                    a
+                    {
+                        font-size: 24px;
+                        color: $c-black2;
+                        font-family: 'Gulf';
+                        &:hover
+                        {
+                            color: $c-brand2;
+                        }
+
+                    }
+                    h3
+                    {
+                        font-size: $xm-fontsize;
+                        margin-bottom: $sm-whitespace + 5px;
+                        color: $c-mgray;
+                        font-family: 'Gulf';
+                    }
+                    .add
+                    {
+                        color: $c-brand2!important;
+                        font-family: 'Gulf';
+                        font-size: $xm-fontsize!important;
+                        @include transition;
+                        
+                        &:hover > i
+                        {
+                            background-color: $c-brand2!important;
+                            color: $c-white!important;
+                        }
+                        i
+                        {
+                            float: right!important;
+                            margin-right: 0!important;
+                            margin-left: 15px!important;
+                            line-height: 3!important;
+                            height: 24px!important;
+                            width: 24px!important;
+                            border: 2px solid $c-brand2!important;
+                            text-align: center!important;
+                            font-size: 8px;
+                            border-radius: 50%!important;
+                        }
+                    }
+
+                }
+            }
+            
+            
+        }
+        
+    }
+    
+}
+
+// *End best-sellers*//
+
+// *Start new books*//
+
+.new-books
+{
+    background: url(../imgs/books-header-bg.png) no-repeat;
+    background-color: $c-brand2;
+    position: relative;
+    padding: 165px 0 300px 0;
+    @media screen and (max-width:$tablet)
+    {
+        padding: 100px 0 300px 0;
+    }
+    .top-curve
+    {
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .bottom-curve
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .text
+    {
+        h2
+        {
+            color: $c-white!important;
+            font-family: 'Gulf';
+            font-size: $lr-lr-fontsize + 4px;
+            @media screen and (max-width:$tablet)
+            {
+                font-size: 28px;
+            }
+            
+        }
+        h3
+        {
+            color: $c-red;
+            font-family: 'Gulf';
+            font-size: $md-fontsize;
+            @media screen and (max-width:$tablet)
+            {
+                font-size: 16px;
+            }
+        }
+    
+    }
+   
+}
+ .new-boxs
+    {
+        margin-top: -210px;
+        background-color: $c-gray;
+        .box
+        {
+            @media screen and (max-width:$tablet)
+            {
+                margin-bottom: 70px;
+                margin-top: 20px;
+            }
+            
+            .bg
+            {
+           
+                img
+                {
+                    height: 350px;
+                }
+                a
+                {
+                    display: block;
+                    width: 100%;
+                    min-height: 350px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    @include transition;
+                    &:hover
+                    {
+                        box-shadow: 0px 8px 29px 0 rgba(36, 43, 49, 0.10);
+                    }
+                }
+                
+              
+            }
+            position: relative;
+            article
+            {
+          
+            .price
+            {
+                width: 85px;
+                height: 85px;
+                background-color: #ec5e77;
+                text-align: center;
+                top: -42px;
+                border-radius: 100%;
+                position: absolute;
+                display: block;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                h3
+                {
+                    color: $c-white;
+                    font-size: 32px;
+                    font-family: $en-font;
+                    line-height: 0.5;
+                    margin-top: 28px;
+                }
+                span
+                {
+                    font-size: 16px;
+                    color: $c-white;
+                }
+            }
+            .sale
+            {
+                height: 65px;
+                width: 65px;
+                position: absolute;
+                top: 25px;
+                margin-top: 30px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #2ed064;
+                display: block;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                p
+                {
+                    color: $c-white;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    font-family: $en-font;
+                }
+            }
+             header
+                {
+                    margin-top: $md-whitespace;
+                    a
+                    {
+                        font-size: 24px;
+                        color: $c-black2;
+                        font-family: 'Gulf';
+                        &:hover
+                        {
+                            color: $c-brand2;
+                        }
+
+                    }
+                    h3
+                    {
+                        font-size: $xm-fontsize;
+                        margin-bottom: $sm-whitespace + 5px;
+                        color: $c-mgray;
+                        font-family: 'Gulf';
+                    }
+                    .add
+                    {
+                        color: $c-brand2!important;
+                        font-family: 'Gulf';
+                        font-size: $xm-fontsize!important;
+                        @include transition;
+                        
+                        &:hover > i
+                        {
+                            background-color: $c-brand2!important;
+                            color: $c-white!important;
+                        }
+                        i
+                        {
+                            float: right!important;
+                            margin-right: 0!important;
+                            margin-left: 15px!important;
+                            line-height: 3!important;
+                            height: 24px!important;
+                            width: 24px!important;
+                            border: 2px solid $c-brand2!important;
+                            text-align: center!important;
+                            font-size: 8px;
+                            border-radius: 50%!important;
+                        }
+                    }
+
+                }
+            }
+            
+            
+        }
+    }
+
+// *End new books*//
+
+
+// *Start new books row2*//
+
+.new-books-row2
+{
+    padding-top: 75px;
+    background: url(../imgs/gallary-bg.png) no-repeat;
+    background-color: $c-gray;
+    @media screen and (max-width:$tablet)
+    {
+        
+    }
+    .new-boxs
+    {
+        margin-top: $lr-whitespace;
+        margin-bottom: $xl-whitespace + 60px;
+       
+        .box
+        {
+            @media screen and (max-width:$tablet)
+            {
+                margin-bottom: 70px;
+                margin-top: 20px;
+            }
+            
+            .bg
+            {
+                
+                @media screen and (max-width:$tablet)
+                {
+                    width: 100%;
+                }
+               
+                img
+                {
+                    height: 350px;
+                }
+                a
+                {
+                    display: block;
+                    width: 100%;
+                    min-height: 350px;
+                    overflow: hidden;
+                    border-radius: 10px;
+                    @include transition;
+                    &:hover
+                    {
+                        box-shadow: 0px 8px 29px 0 rgba(36, 43, 49, 0.10);
+                    }
+                }
+              
+            }
+            position: relative;
+            article
+            {
+            img
+            {
+                height: 100%;
+            }
+            .price
+            {
+                width: 85px;
+                height: 85px;
+                background-color: #ec5e77;
+                text-align: center;
+                top: -42px;
+                border-radius: 100%;
+                position: absolute;
+                display: block;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                h3
+                {
+                    color: $c-white;
+                    font-size: 32px;
+                    font-family: $en-font;
+                    line-height: 0.5;
+                    margin-top: 28px;
+                }
+                span
+                {
+                    font-size: 16px;
+                    color: $c-white;
+                }
+            }
+            .sale
+            {
+                height: 65px;
+                width: 65px;
+                position: absolute;
+                top: 25px;
+                margin-top: 30px;
+                text-align: center;
+                border-radius: 50%;
+                background-color: #2ed064;
+                display: block;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                p
+                {
+                    color: $c-white;
+                    font-size: 20px;
+                    line-height: 1.5;
+                    font-family: $en-font;
+                }
+            }
+             header
+                {
+                    margin-top: $md-whitespace;
+                    a
+                    {
+                        font-size: 24px;
+                        color: $c-black2;
+                        font-family: 'Gulf';
+                        &:hover
+                        {
+                            color: $c-brand2;
+                        }
+
+                    }
+                    h3
+                    {
+                        font-size: $xm-fontsize;
+                        margin-bottom: $sm-whitespace + 5px;
+                        color: $c-mgray;
+                        font-family: 'Gulf';
+                    }
+                    .add
+                    {
+                        color: $c-brand2!important;
+                        font-family: 'Gulf';
+                        font-size: $xm-fontsize!important;
+                        @include transition;
+                        
+                        &:hover > i
+                        {
+                            background-color: $c-brand2!important;
+                            color: $c-white!important;
+                        }
+                        i
+                        {
+                            float: right!important;
+                            margin-right: 0!important;
+                            margin-left: 15px!important;
+                            line-height: 2.8!important;
+                            height: 24px!important;
+                            width: 24px!important;
+                            border: 2px solid $c-brand2!important;
+                            text-align: center!important;
+                            font-size: 8px;
+                            border-radius: 50%!important;
+                        }
+                    }
+
+                }
+            }
+            
+            
+        }
+    }
+  
+}
+
+// *End new books row2*//
+
+
+
+.rules{
+  figure{
+    padding: $md-whitespace;
+    min-height: 230px;
+    background: $c-white;
+    box-shadow: $l-shadow;
+    border-radius: 10px;
+    position: relative;;
+    top: 0;
+    @include transition;
+    &:hover{
+        box-shadow: $d-shadow;
+        top: -30px;
+    }
+    span{
+      position: absolute;
+      bottom: 40px;
+      left: 30px;
+      font-size: 60px;
+      line-height: 0px;
+      font-family: $en-font;
+      color: $c-mgray;
+      opacity: 0.09;
+      font-style: italic;
+    }
+    figcaption{font-size: $xm-fontsize;}
+    @media screen and #{breakpoint(large)}{
+      figcaption{font-size: $lr-xm-fontsize;}
+    }
+  }
+}
+
+.time-single-box{
+  margin-top: 60px;
+  @media screen and #{breakpoint(large)}{
+    margin-top: 0;
+  }
+  &::before {
+    content: '';
+    height: 2px;
+    background: #f4f6fa;
+    width: 100%;
+    display: block;
+    bottom: 20px;
+    position: absolute;
+}
+  &.off{
+    opacity: 0.7;
+  }
+  .bar{
+    height: 30px;
+    width: 3px;
+    display: block;
+    float: right;
+    margin: 10px 3px;
+  }
+  footer{
+
+    width: 100%;
+    float: right;
+    position: relative;
+    .rotate{
+      display: inline-block;
+      transform: rotate(91deg);
+      position: absolute;
+      right: -30px;
+      float: right;
+      top: -20px;
+    }
+
+  }
+}
+

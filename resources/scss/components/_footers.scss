@@ -1,0 +1,410 @@
+/* || ===
+
+= IMKAN.com.sa
+= FOOTER
+
+=== || */
+
+// ** Start contact section **//
+#contact-section
+{
+    padding-bottom: $xl-whitespace;
+    overflow: hidden;
+    @media screen and (max-width: $tablet)
+    {
+        padding-bottom: 0;
+    }    
+    .contact-bg
+    {
+         position: absolute;
+           background-color: #c9203d;
+           left: 0px;
+           width: 40%;
+           height: 379px;
+           position: absolute;
+           margin-top: 228px;
+        @media screen and (max-width: $tablet)
+        {
+            display: none;
+        }
+    }
+    background-color: $c-gray;
+    h3
+    {
+        font-size: $lr-fontsize;
+        font-family: 'Gulf';
+    }
+    h2
+    {
+        font-family: 'Gulf';
+        margin-bottom: $md-whitespace;
+        color: $c-brand2;
+        @media screen and (max-width: $tablet)
+        {
+            margin-bottom: 0px;
+            margin-top: 0px;
+        }
+    }
+    .first
+    {
+        padding-left: $lr-whitespace;
+        @media screen and (max-width: $tablet)
+        {
+            padding-left: $sm-whitespace;
+        }
+
+    .message
+    {
+      height: 250px;
+        @media screen and (max-width: $tablet)
+        {
+            height: 150px;
+        }
+      textarea
+      {
+        outline: none;
+        background-color: transparent;
+        border: 0;
+        border-bottom: 2px solid $c-black2;
+        font-size: $xm-fontsize;
+        width: 100%;
+        height: 250px;
+        @include transition;
+        z-index: 1;
+        position: relative;
+        border-radius: 0;
+        color: $c-black2;
+        &:valid ~ label, &:focus ~ label
+        {
+          color: $c-mgray;
+          @include transition;
+          top: -15px;
+          font-size: $xs-fontsize;
+
+        }
+          @media screen and (max-width: $tablet)
+          {
+              height: 150px;
+          }
+        &:valid , &:focus
+        {
+          color: $c-black2;
+        }
+      }
+    }
+    .input-default
+    {
+
+      position: relative;
+      margin-top: $md-whitespace;
+      margin-bottom: 0;
+      label
+      {
+        width: 100%;
+        font-size: $xm-fontsize;
+        color: $c-mgray;
+        right: $sm-whitespace;
+        position: absolute;
+        top: $sm-whitespace - 10px;
+        z-index: 0;
+      }
+      input
+      {
+
+        outline: none;
+        background-color: transparent;
+        border: 0;
+          color: $c-black2;
+        border-bottom: 2px solid $c-black2 ;
+        font-size: $xm-fontsize;
+        width: 100%;
+        height: $lr-whitespace - 10px;
+        @include transition;
+        z-index: 1;
+        position: relative;
+        border-radius: 0;
+        &:valid ~ label, &:focus ~ label
+        {
+
+          color: $c-mgray;
+          font-size: $xs-fontsize;
+          top: -10px;
+          @include transition;
+
+        }
+        &:valid , &:focus
+        {
+          color: $c-black2;
+          font-size: $xm-fontsize;
+        }
+      }
+    }
+
+
+
+
+    a
+    {
+      @include transition;
+      height: $lr-whitespace - 5px;
+      border: 2px solid $c-brand2;
+      border-radius: $lr-whitespace - 5px;
+      line-height: $lr-whitespace - 5px;
+      margin: 0;
+      border-radius: $lr-whitespace - 5px;
+      margin-top: $lr-whitespace - 10px;
+     @media screen and (max-width: $tablet)
+    {
+        margin:auto;
+        margin-bottom: $lr-whitespace;
+        margin-top: $md-whitespace;
+        margin-left: $sm-whitespace;
+      }
+    }
+
+
+  }
+    .contact-info
+    {
+        background-color: $c-brand2;
+        float: left;
+        padding: 15px 68px 30px 0;
+        border-radius:  $lr-whitespace;
+        margin-top: 63px;
+        @media screen and (max-width: $tablet)
+        {
+            padding: 15px;
+            border-radius: 0px;
+        }
+        h3
+        {
+            font-family: 'Gulf';
+            font-size: $lr-fontsize - 2px;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $sm-fontsize;
+            }
+        }
+        p
+        {
+            font-family: 'Gulf';
+            color: $c-lwhite;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $sm-fontsize;
+            }
+        }
+        a
+        {
+            font-family: $en-font;
+            color: $c-lwhite;
+            @media screen and (max-width: $tablet)
+            {
+                font-size: $sm-fontsize;
+            }
+            &:hover
+            {
+                color: $c-white;
+            }
+        }
+        hr
+        {
+            width: 100%;
+            color: #d96378;
+            height: $border + 1px;
+        }
+      
+    }
+
+}
+// ** End contact section **//
+
+
+// ** Start footer images **//
+
+#footer-images
+{
+    
+    width: 100%;
+    overflow: hidden;
+    figure
+    {
+        background-color: $c-black;
+        @media screen and (max-width:$tablet)
+        {
+       
+        }
+   
+        padding: 0px!important;
+        img
+        {
+            width: 100%;
+            height: auto;
+            opacity: 0.5;
+            @include transition;
+            &:hover
+            {
+                opacity: 1;
+            }
+        }
+    }
+   
+}
+// ** End footer images **//
+
+#bottom-page
+{
+    padding: $lr-whitespace 0 $lr-whitespace 0;
+    @media screen and (max-width:$tablet)
+    {
+        padding: $md-whitespace 0 0 0;
+    }
+    figure
+    {
+        display: inline-block;
+        margin-top: $sm-whitespace - 5px;
+        @media screen and (max-width:$tablet)
+        {
+            padding: $sm-whitespace 0 $sm-whitespace 0;
+        }
+        img
+        {
+            width: 190px;
+            height: 55px;
+            margin-left: $md-whitespace;
+        }
+    }
+    .text
+    {
+        display: inline-block;
+        margin-top: $sm-whitespace - 5px;
+        @media screen and (max-width:$tablet)
+        {
+            width: 100%;
+            margin-top: $sm-whitespace;
+            margin-bottom: $sm-whitespace;
+        }
+        p
+        {
+            margin-bottom: $sm-whitespace - 5px;
+            margin-top: 0px;
+            @media screen and (max-width:$tablet)
+            {
+                margin-right: 0px;
+            }
+        }
+    }
+    .client-logo
+    {
+        @media screen and (max-width:$tablet)
+        {
+            width: 100%;
+        }
+        img
+        {
+            height: 22px;
+            width: 155px;
+            margin-top:$sm-whitespace;
+            @media screen and (max-width:$tablet)
+            {
+                margin-top: 0px;   
+                
+            }
+        }
+        @media screen and (max-width:$tablet)
+        {
+            float: right;
+        }
+    }
+    .socil-links
+    {
+        margin-top: $md-whitespace - 2px;
+         @media screen and (max-width:$tablet)
+        {
+            float: right;
+            margin-top: $sm-whitespace + 5px;
+            margin-bottom: 0px;
+        }
+        li
+        {
+            margin-right: $sm-whitespace;
+            @media screen and (max-width:$tablet){
+            margin-right: 0;
+            margin-left: $sm-whitespace;
+            }
+            a
+            {
+                @include transition;
+                color: $c-mgray;
+                i
+                {
+                    font-size: $lr-iconsize + 2px;
+                }
+            }
+            .fb
+            {
+                &:hover
+                {
+                    color: $c-facebook;
+                }
+            }
+            .insta
+            {
+                &:hover
+                {
+                    color: $c-instegram;
+                }
+            }
+            .tw
+            {
+                &:hover
+                {
+                    color: $c-twitter;
+                }
+            }
+            .g
+            {
+                &:hover
+                {
+                    color: $c-google;
+                }
+            }
+            
+        }
+    }
+}
+
+
+#made-by
+{
+    padding: 0px 0 $md-whitespace 0;
+    @media screen and (max-width:$tablet)
+    {
+        padding: 0px 0 $sm-whitespace 0;
+    }
+    hr
+    {
+        margin-bottom: 30px;
+        margin-top: 0px;
+        background-color: #f2f7fa;
+        height: 2px;
+        outline: 0px;
+        border: 0px;
+        @media screen and (max-width:$tablet)
+        {
+            margin-bottom: $sm-whitespace;
+        }
+    }
+    a
+    {
+        img
+        {
+            width: auto;
+            margin-right: $sm-whitespace;
+        }
+    }
+    span
+    {
+        font-family: 'Gulf';
+    }
+}
